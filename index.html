@@ -9,26 +9,31 @@
 </head>
 <body>
 <!-- Début du Header-->
-    <header>
+    <header class="d-flex flex-column align-items-center bg-white">
 <!-- Début de la NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light maNav container">
-            <div class="container ms-5 d-flex flex-row-reverse mynav">
+        <div>
+          <h1 class="text-center py-3 pt-5 fw-bold">
+            emporium.            
+          </h1>
+      </div>
+        <nav class="navbar navbar-expand-lg navbar-light maNav">
+            <div class="ms-5 mynav container-fluid d-flex justify-content-between">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link" href="#">PRODUCT</a>
+              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="#">PRODUCT </a>
                         <a class="nav-link" href="#">BLOG</a>
                         <a class="nav-link" href="#">ELEMENTS</a>
                         <a class="nav-link" href="#">ABOUT</a>
                         <a class="nav-link" href="#">CONTACT</a>
-                        <a class="nav-link" href="#">HOME</a>
-                        <div class="mybutt position-absolute end-0">
-                            <button type="button" class="btn btn-outline-dark jour"></button>
-                            <button type="button" class="btn btn-outline-dark  bg-dark nuit"></button>
-                            <button class="cnx">Connexion</button>
-                        </div>
+                        <a href="" class="nav-link">
+                          <button type="button" class="btn btn-outline-dark jour"></button>
+                          <button type="button" class="btn btn-outline-dark  bg-dark nuit"></button>
+                          <button class="cnx">CONNEXION</button>
+                        </a>                           
                     </div>
               </div>
             </div>
@@ -39,123 +44,153 @@
 <!-- Début du Main-->
     <main>
         <!-- banniere emporium avec photo -->
-        <section class="sect1">
-            <div class="row container-fluid">
-                <div class="col-6 d-flex flex-column boite_shopat"> 
-                    <h2 class="text-danger">Shop at</h2>
-                    <h1 class="emporium ">emporium.</h1>
+        <section class="container-fluid sect1">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="container m-5 my-media">
+                    <span id="ban-empo" class="text-danger">
+                      Shop at
+                    </span>
+                    <p class="" id="ban-empo1">emporium.</p>
+                    <p class="text-secondary">A wonderful serenity has taken possession of my entire soul, like
+                      these sweet mornings of spring which i enjoy with my.</p>
+                  <button type="button" class="btn btn-danger monBtnSale"><span id="monSale">SALE
+                          ITEMS</span></button>
+                  </div>
                 </div>
-                <div class="col-6 slide1 d-flex"> 
+                <div class="col-md-6"> 
                     <img src="/public/img/slider-1.jpg" class="img-fluid" alt="">
                 </div>
+              </div>
+                
             </div>
         </section>
 <!-- zone produits -->
-        <br><br><br>
-        <div class="container-fluid">
+        <div class="container-fluid mt-5">
             <div class="row">
-              <div class="col-4">
-                <div class="boite-service d-flex">
-                    <img src="/public/img/services/service-1.jpg" alt="" class="img-fluid">
-                    <p class=" position-absolute align-self-center  text-light fs-2">Sale Items</p>
+              <div class="col-sm-4">
+                <div class="image1 tacos">
+                    <h3 class="border-bottom border-4 w-75 text-center text-white fw-bold">Sale Items</h3>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="boite-service d-flex">
-                    <img src="/public/img/services/service-2.jpg" alt="" class="img-fluid">
-                    <p class=" position-absolute align-self-center  text-light fs-2">Sale Items</p>
+              <div class="col-sm-4">
+                <div class="image2 tacos">
+                    <h3 class="border-bottom border-4 w-75 text-center text-white fw-bold">Sale Items</h3>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="boite-service d-flex">
-                    <img src="/public/img/services/slider-3.jpg" alt="" class="img-fluid">
-                    <p class=" position-absolute align-self-center text-light fs-2">Sale Items</p>
+              <div class="col-sm-4">
+                <div class="image3 tacos">
+                    <h3 class=" border-bottom border-4 w-75 text-center text-white fw-bold">Sale Items</h3>
                 </div>
               </div>  
             </div>
           </div>
-          <br><br><br>
+          <!-- section products -->
           <section class="produits">
-              <h2 class="text-center">Recent Products</h2>
               <div class="container">
-                  <div>
-                    <div class="container">
-                        <div class="row g-3">
-                          <div class="col-4">
-                            <div class="m-2">
-                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
+                <h2 class="text-center mt-5 mb-5 fw-bold">Recent Products</h2>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="avant monApres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
                                 <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
-                                <p class="text-danger text-center fw-bold">$600.00</p>            
-                            </div>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
                           </div>
-                          <div class="col-4">
-                            <div class="m-2 text-center">
-                                <img src="/public/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
-                                <h6 class="text-center fw-bold mt-4">Leather Gloves</h6>
-                                <span class="text-danger text-center fw-bold"><del class="text-secondary text-center">$34.OO</del>$27.00</span> 
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
                             </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                              <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                                  style="height: 75px; width: 75px;">SALE!</button>
+                              <div class="ms-4">
+                                  <p class="fw-bold text-center mt-4 d-block">Leather Gloves</p>
+                                  <span class="text-center text-danger fw-bold "> <del class="text-secondary">$34.00</del>
+                                      $27.00</span>
+                              </div>
                           </div>
-                          <div class="col-4">
-                            <div class="m-2">
-                                <img src="/public/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
-                                <h6 class="text-center fw-bold mt-4">Colorful Bowl</h6>
-                                <p class="text-danger text-center fw-bold">$18.00</p>  
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
                             </div>
+                                <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
                           </div>
                         </div>
                         <!-- 2 eme row -->
-                        <div class="row g-3">
-                            <div class="col-4">
-                              <div class="m-2 text-center">
-                                  <img src="/public/img/products_mini/product-bag.jpg" class="img-fluid" alt="">
-                                  <h6 class="text-center fw-bold mt-4">Womanen Bag</h6>
-                                  <span class="text-danger text-center fw-bold"><del class="text-secondary text-center">$420.OO</del>$350.00</span>           
-                              </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
                             </div>
-                            <div class="col-4">
-                              <div class="m-2">
-                                  <img src="/public/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
-                                  <h6 class="text-center fw-bold mt-4">Minimal T-Shirt</h6>
-                                  <p class="text-danger text-center fw-bold">$15.00</p>  
-                              </div>
-                            </div>
-                            <div class="col-4">
-                              <div class="m-2">
-                                  <img src="/public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
-                                  <h6 class="text-center fw-bold mt-4">Plates Set</h6>
-                                  <p class="text-danger text-center fw-bold ">$30.00</p>  
-                              </div>
-                            </div>
+                                <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
                           </div>
-                      </div> 
-                     <!-- 3 eme row -->
-                     <div class="row g-3">
-                      <div class="col-4">
-                        <div class="m-2">
-                            <img src="/public/img/products_mini/product-luxry-sofa.jpg" class="img-fluid" alt="">
-                            <h6 class="text-center fw-bold mt-4">Modern Sofa</h6>
-                            <p class="text-danger text-center fw-bold">$900.00</p>              
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                              <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                                  style="height: 75px; width: 75px;">SALE!</button>
+                              <div class="ms-4">
+                                  <p class="fw-bold text-center mt-4 d-block">Leather Gloves</p>
+                                  <span class="text-center text-danger fw-bold "> <del class="text-secondary">$34.00</del>
+                                      $27.00</span>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
+                                <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="m-2">
-                            <img src="/public/img/products_mini/product-bed.jpg" class="img-fluid" alt="">
-                            <h6 class="text-center fw-bold mt-1 mt-4">Bed Linen</h6>
-                            <p class="text-danger text-center fw-bold">$79.00</p>  
+                        <!-- 3 eme row -->
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
+                                <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                              <button type="button" class="btn btn-danger rounded-circle mt-4 "
+                                  style="height: 75px; width: 75px;">SALE!</button>
+                              <div class="ms-4">
+                                  <p class="fw-bold text-center mt-4 d-block">Leather Gloves</p>
+                                  <span class="text-center text-danger fw-bold "> <del class="text-secondary">$34.00</del>
+                                      $27.00</span>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="avant apres">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid my-images" alt="">        
+                            </div>
+                                <h6 class="text-center fw-bold mt-4">Luxury sofa</h6>
+                                <p class="text-danger text-center fw-bold">$600.00</p>    
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-4">
-                        <div class="m-2">
-                            <img src="/public/img/products_mini/product-shoes.jpg" class="img-fluid" alt="">
-                            <h6 class="text-center fw-bold mt-4">Minimal Shoes</h6>
-                            <p class="text-danger text-center fw-bold">$60.00</p>  
-                        </div>
-                      </div>
-                    </div>
-                </div>                    
-                  </div>                  
-              </div>
+                        <!-- 2 eme row --> 
+              </div> 
+                                                     
           </section>
+          <!-- debut section avec image bg paralaxe -->
+          <section>
+          
+          </section>
+
     </main>
  <!-- Fin du Main-->
        

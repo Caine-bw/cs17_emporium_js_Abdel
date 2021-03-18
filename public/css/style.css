@@ -16748,13 +16748,19 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
-.mynav a {
-  list-style: inherit;
-  font-family: Poppins;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.mybutt {
-  margin-right: 100px;
+h1, .h1 {
+  font-size: 55px;
+  transition: 1s;
+}
+
+a {
+  margin-right: 40px;
+  margin-top: 40px;
+  font-size: 20px;
 }
 
 .cnx {
@@ -16766,26 +16772,202 @@ readers do not read off random characters that represent icons */
 
 .sect1 {
   background-color: #f3f3f3;
-  font-family: Poppins;
 }
 
-.emporium {
-  font-size: 10vh;
+@media screen and (max-width: 569px) {
+  .my-media {
+    font-size: 20px;
+  }
+}
+
+#ban-empo {
+  font-size: 50px;
+}
+@media screen and (max-width: 569px) {
+  #ban-empo {
+    font-size: 20px;
+  }
+}
+
+#ban-empo1 {
+  font-size: 90px;
   font-weight: bold;
+}
+@media screen and (max-width: 1025px) {
+  #ban-empo1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #ban-empo1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 569px) {
+  #ban-empo1 {
+    font-size: 40px;
+  }
+}
+
+.monBtnSale {
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+#monSale {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .boite-service {
-  font-family: Poppins;
   justify-content: center;
   justify-items: center;
 }
 
-.boite-service p {
-  text-decoration: underline;
+.tacos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.produits {
-  font-family: Poppins;
+.image1 {
+  background-image: url(../../public/img/services/service-1.jpg);
+  background-size: cover;
+  height: 150px;
+}
+@media screen and (max-width: 1025px) {
+  .image1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .image1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .image1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.image2 {
+  background-image: url(../../public/img/services/service-2.jpg);
+  background-size: cover;
+  height: 150px;
+}
+@media screen and (max-width: 1025px) {
+  .image2 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .image2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .image2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.image3 {
+  background-image: url(../../public/img/services/slider-3.jpg);
+  background-size: cover;
+  height: 150px;
+}
+@media screen and (max-width: 1025px) {
+  .image3 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .image3 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 569px) {
+  .image3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.avant {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.apres {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.my-images {
+  margin-right: auto;
+  margin-left: auto;
+  width: 97%;
+  transition: 1s;
+  display: block;
+}
+
+.my-images:hover {
+  transform: scale(1.1);
+}
+
+.avant::before {
+  content: "vieuw details";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  width: 50%;
+  height: 70px;
+  background-color: black;
+  color: white;
+  transition: 1s;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.avant:hover::before {
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.apres::after {
+  content: "add to cart";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -70px;
+  width: 50%;
+  height: 70px;
+  background-color: red;
+  color: white;
+  transition: 1s;
+  z-index: 1;
+  opacity: 0.2;
+  right: 0;
+}
+
+.apres:hover::after {
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.my-images {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
