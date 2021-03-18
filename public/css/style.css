@@ -16748,4 +16748,40 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+.mynav a {
+  list-style: inherit;
+  font-family: Poppins;
+}
+
+.mybutt {
+  margin-right: 100px;
+}
+
+.cnx {
+  align-items: center;
+  background-color: #636663;
+  color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.sect1 {
+  background-color: #f3f3f3;
+  font-family: Poppins;
+}
+
+.emporium {
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+.boite-service {
+  font-family: Poppins;
+  justify-content: center;
+  justify-items: center;
+}
+
+.boite-service p {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

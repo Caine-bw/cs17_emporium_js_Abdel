@@ -11,31 +11,116 @@
 <!-- Début du Header-->
     <header>
 <!-- Début de la NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light maNav">
-            <div class="container flex-row-reverse">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light maNav container">
+            <div class="container ms-5 d-flex flex-row-reverse mynav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="#">HOME</a>
-                  <a class="nav-link" href="#">PRODUCT</a>
-                  <a class="nav-link" href="#">BLOG</a>
-                  <a class="nav-link" href="#">ELEMENTS</a>
-                  <a class="nav-link" href="#">ABOUT</a>
-                  <a class="nav-link" href="#">CONTACT</a>
-                </div>
+                    <div class="navbar-nav ">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="#">ELEMENTS</a>
+                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="#">HOME</a>
+                        <div class="mybutt position-absolute end-0">
+                            <button type="button" class="btn btn-outline-dark jour"></button>
+                            <button type="button" class="btn btn-outline-dark  bg-dark nuit"></button>
+                            <button class="cnx">Connexion</button>
+                        </div>
+                    </div>
               </div>
             </div>
-          </nav>
+        </nav>
 <!-- Fin du NavBar -->
     </header>
 <!-- Fin du Header -->
-
 <!-- Début du Main-->
     <main>
-
+        <!-- banniere emporium avec photo -->
+        <section class="sect1">
+            <div class="row container-fluid">
+                <div class="col-6 d-flex flex-column boite_shopat"> 
+                    <h2 class="text-danger">Shop at</h2>
+                    <h1 class="emporium ">emporium.</h1>
+                </div>
+                <div class="col-6 slide1 d-flex"> 
+                    <img src="/public/img/slider-1.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+<!-- zone produits -->
+        <br><br><br>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <div class="boite-service d-flex">
+                    <img src="/public/img/services/service-1.jpg" alt="" class="img-fluid">
+                    <p class=" position-absolute align-self-center  text-light fs-2">Sale Items</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="boite-service d-flex">
+                    <img src="/public/img/services/service-2.jpg" alt="" class="img-fluid">
+                    <p class=" position-absolute align-self-center  text-light fs-2">Sale Items</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="boite-service d-flex">
+                    <img src="/public/img/services/slider-3.jpg" alt="" class="img-fluid">
+                    <p class=" position-absolute align-self-center text-light fs-2">Sale Items</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <br><br><br>
+          <section class="produits">
+              <h2 class="text-center">Recent Products</h2>
+              <div class="container">
+                  <div>
+                    <div class="container">
+                        <div class="row g-3">
+                          <div class="col-4">
+                            <div class="m-2">
+                                <img src="/public/img/products_mini/product-modern-sofa.jpg" class="img-fluid" alt="">
+                                <h6 class="text-center">Luxury sofa</h6>
+                                <p class="text-danger text-center">$600.00</p>            
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="m-2">
+                                <img src="/public/img/products_mini/product-gloves.jpg" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="m-2">
+                                <img src="/public/img/products_mini/product-cups.jpg" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 2 eme row -->
+                        <div class="row g-3">
+                            <div class="col-4">
+                              <div class="m-2">
+                                  <img src="/public/img/products_mini/product-bag.jpg" class="img-fluid" alt="">            
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="m-2">
+                                  <img src="/public/img/products_mini/product-tshitr.jpg" class="img-fluid" alt="">
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="m-2">
+                                  <img src="/public/img/products_mini/product-plates.jpg" class="img-fluid" alt="">
+                              </div>
+                            </div>
+                          </div>
+                      </div>                    
+                  </div>                  
+              </div>
+          </section>
     </main>
  <!-- Fin du Main-->
        
