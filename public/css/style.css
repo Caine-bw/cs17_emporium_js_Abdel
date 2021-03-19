@@ -16779,6 +16779,19 @@ a {
   background-color: #f4f4f4;
 }
 
+.hide-content {
+  visibility: hidden;
+}
+
+h5, .h5 {
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  .gauche {
+    width: 100% !important;
+  }
+}
 .shipments {
   width: 90%;
   margin: 0 auto;
